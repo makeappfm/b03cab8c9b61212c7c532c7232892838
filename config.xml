@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<widget xmlns   = "http://www.w3.org/ns/widgets"
+        xmlns:gap   = "http://phonegap.com/ns/1.0"
+        id          = "com.agan.app"
+        versionCode = "10"
+        version     = "1.0.0">
+
+    <name>AGAN</name>
+
+    <description>
+        Com uma linha rica em eficiência nossa impressão de valores humanos esta em cada etapa de construção, que reflete em cada produto o bem estar de cada colaborador e a felicidade de gerar mais saúde e harmonia para cada cliente. 
+    </description>
+
+    <author>Tadapp</author>
+
+    <plugin name='cordova-plugin-splashscreen' />
+    <plugin name='cordova-plugin-inappbrowser' />
+    <plugin name='cordova-plugin-network-information' />
+
+    <preference name='phonegap-version' value='cli-9.0.0' />
+
+    <gap:plugin name='onesignal-cordova-plugin' spec='2.4.5' source='npm' />
+
+    <preference name='android-build-tool' value='gradle' />
+    <preference name="android-targetSdkVersion" value="29" />
+    <preference name='orientation' value='portrait' />
+
+    <preference name="SplashMaintainAspectRatio" value="true" />
+    <preference name="SplashScreenSpinnerColor" value="#D1CAA7" />
+
+    <preference name="Fullscreen" value="false" />
+
+
+    <platform name="android">
+        <icon src="res/android/icon/1606849718_e5bb267912409eabc66a.png" density="ldpi" />
+        <icon src="res/android/icon/1606849718_4f15a199b35db9d97382.png" density="mdpi" />
+        <icon src="res/android/icon/1606849718_996852a87a8bd54a6b2a.png" density="hdpi" />
+        <icon src="res/android/icon/1606849718_0068778cc328f77496f2.png" density="xhdpi" />
+        <icon src="res/android/icon/1606849718_b6699f07a612dd172dd1.png" density="xxhdpi" />
+        <icon src="res/android/icon/1606849718_6eb8e969fd2c35842cbf.png" density="xxxhdpi" />
+
+        <splash src="res/android/screen/1606849901_914add07ed226af292b5.png" density="port-hdpi"/>
+        <splash src="res/android/screen/1606849901_831200d3c0f441a89e14.png" density="port-ldpi"/>
+        <splash src="res/android/screen/1606849901_68a0ae0a94a9103961a1.png" density="port-mdpi"/>
+        <splash src="res/android/screen/1606849901_2d02e6bb790e1b6d121e.png" density="port-xhdpi"/>
+        <splash src="res/android/screen/1606849901_8613bcb7230159770a07.png" density="land-hdpi"/>
+        <splash src="res/android/screen/1606849901_b3a6d9c0037c523299d0.png" density="land-ldpi"/>
+        <splash src="res/android/screen/1606849901_49f2eb9bc6c980e9ae44.png" density="land-mdpi"/>
+        <splash src="res/android/screen/1606849901_3164a4aa106c282fd861.png" density="land-xhdpi"/>
+    </platform>
+
+    <access origin='*'/>
+    <plugin name='cordova-plugin-whitelist' />
+    <allow-intent href='http://*/*'/>
+    <allow-intent href='https://*/*'/>
+    <allow-intent href='tel:*'/>
+    <allow-intent href='sms:*'/>
+    <allow-intent href='mailto:*'/>
+    <allow-intent href='geo:*'/>
+
+</widget>
